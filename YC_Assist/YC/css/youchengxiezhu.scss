@@ -1,0 +1,160 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($name,$val,$val2,$val3){
+    .#{$name}-24{font-size: $val;}
+    .#{$name}-12{font-size: $val2;color: #b9b9b9;}
+    .#{$name}-11{font-size: $val3;color: #76bff2;}    
+}
+@include font(spc,24px,12px,20px);
+html,body,.warp{
+    @include full(100%,100%,none);
+    @include box();
+    overflow: hidden;
+}
+.warp{
+    header{
+        @include full(100%,38px,#f7f7f7);
+        @include box(horizontal);
+        .header_left{
+            @include full(30px,38px,none);
+            line-height: 38px;
+            text-align: center;
+        }
+        .header_right{
+            @include full(36px,38px,none);
+            line-height: 38px;
+            text-align: center;
+        }
+        .header_center{
+            -webkit-box-flex: 1;
+            line-height: 38px;
+            text-align: center;
+        }
+    }
+    .warpper{
+        -webkit-box-flex: 1;
+        overflow: auto;
+        @include box();
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+    section{
+        background: #f2f2f2;
+         @include box();
+        .nav{
+            @include full(100%,18px,#f2f2f2);
+            line-height: 18px;
+            padding-left: 9px;
+            padding-top: 8px;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+        }
+        .main{
+            @include full(100%,150px,white);
+            position: relative;
+            .img1{
+                position: absolute;
+                right: 12px;
+                top: 9px;
+            }
+            .img2{
+                position: absolute;
+                right: 12px;
+                top: 40px;
+            }
+            ul{
+                @include full(100%,150px,none);
+                padding-left: 9px;
+                box-sizing: border-box;
+                li{
+                    @include box(horizontal);
+                    border-bottom: 1px solid #e6e6e6;
+                   p{
+                       @include full(60px,29px,none);
+                       line-height: 29px;
+                   }
+                   input{
+                       width: 100%;
+                       height: 29px;
+                       border: none;
+                       outline: none;
+                   }
+                }
+            }
+        }
+        .main2{
+            @include full(100%,125px,white);
+            padding-left: 9px;
+            box-sizing: border-box;
+            p{
+                padding-top: 8px;
+                box-sizing: border-box;
+            }
+            ol{
+                @include box(horizontal);
+                .ol_li1{
+                    padding-top: 16px;
+                    box-sizing: border-box;
+                    img{
+                        padding-right: 12px;
+                    }
+                }
+                .ol_li2{
+                    @include full(69px,69px,none);
+                    margin-top: 16px;
+                    box-sizing: border-box;
+                    line-height: 65px;
+                    border: 1px solid #ccc;
+                    img{
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+        .main3{
+            @include full(100%,46px,white);
+            border-top: 4px solid #f2f2f2;
+            padding-left: 9px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .main3_img{
+            position: absolute;
+            right: 12px;
+            top: 15px;
+        }
+    }
+    footer{
+        @include full(100%,42px,white);
+        @include box(horizontal);
+        margin-top: 20px;
+        .footer_left{
+            -webkit-box-flex: 1;
+            line-height: 42px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            span{
+                color: #ff7d1b;
+            }
+        }
+        .footer_right{
+            @include full(86px,42px,#ff7d1b);
+            line-height: 42px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    }
+}

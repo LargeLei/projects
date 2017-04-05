@@ -1,0 +1,69 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include full(100%,100%,#f7f7f7);
+    @include box(vertical);
+}
+.yjp_shr header{
+    position: relative;
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #ccc;
+    .header_left{
+        position: absolute;
+        top: 1.4rem;
+        left: 1.1rem;
+        img{
+            @include full(1rem,auto,none);
+        }
+    }
+    .header_right{
+        @include full(100%,4.5rem,none);
+        text-align: center;
+        line-height: 4.5rem;
+        font-size: 1.6rem;
+    }
+}
+.yjp_shr section{
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    -webkit-box-flex: 1;
+    background: #F7F7F7;   
+    p{
+        @include full(100%,auto,none);
+        font-size: 1.4rem;
+
+        line-height: 3rem;
+    } 
+    textarea{
+        outline: none;
+        @include full(100%,15rem,#fff);
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    button{
+        @include full(100%,3rem,#ff7f1c);
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 1.6rem;
+        margin-top: 0.7rem;
+    }
+}

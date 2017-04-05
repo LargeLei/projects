@@ -1,0 +1,85 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-12 {
+  font-size: 12px;
+  color: #b9b9b9; }
+
+.spc-11 {
+  font-size: 20px;
+  color: #76bff2; }
+
+html, body, .warp {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.warp header {
+  width: 100%;
+  height: 38px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf; }
+  .warp header .header_left, .warp header .header_right {
+    width: 30px;
+    height: 38px;
+    background: none;
+    line-height: 38px;
+    text-align: center; }
+  .warp header .header_center {
+    -webkit-box-flex: 1;
+    line-height: 38px;
+    text-align: center; }
+.warp section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2; }
+  .warp section .main {
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative; }
+    .warp section .main ul {
+      width: 100%;
+      height: auto;
+      background: none; }
+      .warp section .main ul li {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        border-bottom: 1px solid #f2f2f2; }
+        .warp section .main ul li p {
+          display: block;
+          width: 60px;
+          height: 24px;
+          background: none;
+          line-height: 24px; }
+        .warp section .main ul li input {
+          width: 100%;
+          height: 24px;
+          background: none;
+          border: none;
+          outline: none; }
+    .warp section .main img {
+      position: absolute;
+      right: 0;
+      bottom: 30px; }
+  .warp section button {
+    width: 94%;
+    height: 25px;
+    background: #ff7f1d;
+    margin-top: 25px;
+    margin-left: 9px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px; }
+
+/*# sourceMappingURL=xiugaishouhuodizhi.css.map */

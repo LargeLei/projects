@@ -1,0 +1,275 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.yjp_shr header {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .yjp_shr header .header_left {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.1rem; }
+    .yjp_shr header .header_left img {
+      width: 1rem;
+      height: auto;
+      background: none; }
+  .yjp_shr header .header_right {
+    width: 100%;
+    height: 4.5rem;
+    background: none; }
+    .yjp_shr header .header_right ul {
+      width: 100%;
+      height: 4.5rem;
+      background: none; }
+      .yjp_shr header .header_right ul li {
+        line-height: 4.5rem;
+        width: 100%;
+        height: 4.5rem;
+        background: none;
+        text-align: center;
+        font-size: 1.6rem; }
+        .yjp_shr header .header_right ul li span {
+          padding-left: 1rem; }
+          .yjp_shr header .header_right ul li span:nth-child(1) {
+            color: red; }
+
+.yjp_shr section {
+  overflow-y: auto;
+  -webkit-box-flex: 1; }
+  .yjp_shr section::-webkit-scrollbar {
+    width: 0; }
+  .yjp_shr section .section_no1 {
+    position: relative; }
+    .yjp_shr section .section_no1 .section_no1_p1 {
+      position: absolute;
+      top: 1.1rem;
+      right: 2.25rem;
+      width: 8rem;
+      height: 1.7rem;
+      background: #a1a1a1;
+      color: #fff;
+      border-radius: 1.5rem;
+      text-align: center;
+      line-height: 1.7rem; }
+    .yjp_shr section .section_no1 img {
+      width: 100%;
+      height: auto;
+      background: none; }
+    .yjp_shr section .section_no1 .section_no1_p2 {
+      position: absolute;
+      right: 2.2rem;
+      bottom: 0.7rem;
+      font-size: 1.6rem;
+      color: red; }
+      .yjp_shr section .section_no1 .section_no1_p2 img {
+        width: 1.5rem;
+        height: auto;
+        background: none;
+        vertical-align: middle; }
+  .yjp_shr section .section_no2 {
+    width: 100%;
+    height: auto;
+    background: none; }
+    .yjp_shr section .section_no2 ul {
+      width: 100%;
+      height: 3.5rem;
+      background: none;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .yjp_shr section .section_no2 ul li {
+        line-height: 3.5rem;
+        -webkit-box-flex: 1; }
+        .yjp_shr section .section_no2 ul li:nth-child(1) {
+          font-size: 1.8rem;
+          padding-left: 1.1rem; }
+        .yjp_shr section .section_no2 ul li:nth-child(2) {
+          font-size: 1.4rem;
+          text-align: right;
+          padding-right: 1.1rem;
+          color: #ff7f1c; }
+        .yjp_shr section .section_no2 ul li img {
+          width: 2.3rem;
+          height: auto;
+          background: none;
+          vertical-align: middle; }
+  .yjp_shr section .section_no3 {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    padding-left: 1.1rem; }
+    .yjp_shr section .section_no3 button {
+      border-radius: 0.6rem;
+      border: none;
+      outline: none;
+      font-size: 1.4rem;
+      width: 6rem;
+      height: 2rem;
+      background: #ff7f1c;
+      color: #fff; }
+    .yjp_shr section .section_no3 > p {
+      padding-left: 0.5rem;
+      line-height: 2rem; }
+      .yjp_shr section .section_no3 > p:nth-child(2) {
+        color: #FF7F1C; }
+      .yjp_shr section .section_no3 > p:nth-child(3) {
+        color: #ccc;
+        text-decoration: line-through; }
+      .yjp_shr section .section_no3 > p > span {
+        font-size: 1.6rem; }
+  .yjp_shr section .section_no4 {
+    width: 100%;
+    height: 3rem;
+    background: none;
+    border-bottom: 5px solid #f2f2f2; }
+    .yjp_shr section .section_no4 ul {
+      width: 100%;
+      height: 3rem;
+      background: none;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .yjp_shr section .section_no4 ul li {
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 3rem; }
+  .yjp_shr section .section_no5 {
+    border-bottom: 5px solid #F2F2F2;
+    padding-left: 1.1rem;
+    width: 100%;
+    height: 19rem;
+    background: none; }
+    .yjp_shr section .section_no5 .section_no5_1 {
+      width: 100%;
+      height: 3.5rem;
+      background: none;
+      border-bottom: 1px solid #ccc;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      line-height: 3.5rem; }
+      .yjp_shr section .section_no5 .section_no5_1 p {
+        font-size: 1.4rem;
+        -webkit-box-flex: 1; }
+      .yjp_shr section .section_no5 .section_no5_1 > div {
+        margin-right: 1.1rem;
+        padding-top: 0.4rem;
+        width: 1rem;
+        height: 3.5rem;
+        background: none; }
+      .yjp_shr section .section_no5 .section_no5_1 img {
+        width: 1rem;
+        height: auto;
+        background: none; }
+    .yjp_shr section .section_no5 .section_no5_2 {
+      padding-right: 1.1rem;
+      width: 100%;
+      height: 7.5rem;
+      background: none; }
+      .yjp_shr section .section_no5 .section_no5_2 dl {
+        width: 100%;
+        height: 5.3rem;
+        background: none;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .yjp_shr section .section_no5 .section_no5_2 dl dt {
+          padding-top: 0.5rem; }
+        .yjp_shr section .section_no5 .section_no5_2 dl img {
+          width: 2.4rem;
+          height: auto;
+          background: none; }
+        .yjp_shr section .section_no5 .section_no5_2 dl dd {
+          padding-left: 2rem;
+          -webkit-box-flex: 1;
+          padding-top: 0.4rem; }
+  .yjp_shr section .section_no6 {
+    border-bottom: 5px solid #F2F2F2;
+    padding-left: 1.1rem;
+    width: 100%;
+    height: 14rem;
+    background: none; }
+    .yjp_shr section .section_no6 .section_no6_1 {
+      width: 100%;
+      height: 3.5rem;
+      background: none;
+      border-bottom: 1px solid #ccc;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      line-height: 3.5rem; }
+      .yjp_shr section .section_no6 .section_no6_1 p {
+        font-size: 1.4rem;
+        -webkit-box-flex: 1; }
+    .yjp_shr section .section_no6 .section_no6_2 {
+      width: 100%;
+      height: auto;
+      background: none;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .yjp_shr section .section_no6 .section_no6_2 dl {
+        text-align: center;
+        padding-top: 0.5rem;
+        -webkit-box-flex: 1; }
+        .yjp_shr section .section_no6 .section_no6_2 dl dt {
+          text-align: left; }
+        .yjp_shr section .section_no6 .section_no6_2 dl img {
+          width: 5.5rem;
+          height: auto;
+          background: none; }
+        .yjp_shr section .section_no6 .section_no6_2 dl dd {
+          padding-top: 0.4rem;
+          -webkit-transform: scale(0.9);
+          font-size: 1rem; }
+          .yjp_shr section .section_no6 .section_no6_2 dl dd span:nth-child(1) {
+            color: #FF7F1C; }
+          .yjp_shr section .section_no6 .section_no6_2 dl dd span:nth-child(2) {
+            color: #ccc;
+            text-decoration: line-through; }
+
+.yjp_shr footer {
+  overflow: hidden;
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  border-top: 1px solid #ccc; }
+  .yjp_shr footer ul {
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .yjp_shr footer ul li {
+      line-height: 5rem;
+      -webkit-box-flex: 1;
+      text-align: center; }
+      .yjp_shr footer ul li:nth-child(2) {
+        border-left: 1px solid #ccc; }
+      .yjp_shr footer ul li span {
+        font-size: 1.6rem;
+        padding-left: 0.5rem; }
+      .yjp_shr footer ul li img {
+        width: 1.8rem;
+        height: auto;
+        background: none;
+        vertical-align: middle; }
+
+/*# sourceMappingURL=spxq.css.map */

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>装修店铺</title>
+		<link rel="stylesheet" type="text/css" href="css/my_home_fishing.css"/>
+		<script src="js/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<div class="warp">
+			<header>
+				<a href="../../shouye.html"><img src="../img/1_03.png" /></a>
+				<p>装修店铺</p>
+				<span class="h-span-right">保存</span>
+				<span class="h-span-right">取消</span>
+			</header>
+			<section>
+				<div class="s-one">
+					<dl>
+						<dt>88</dt>
+						<dd>查看全部</dd>
+					</dl>
+					<dl>
+						<dt>66</dt>
+						<dd>上架商品</dd>
+					</dl>
+					<dl>
+						<dt>222</dt>
+						<dd>库存商品</dd>
+					</dl>
+					<dl>
+						<dt>55</dt>
+						<dd>待审核商品</dd>
+					</dl>
+					<img src="img/1_03.png"/>
+				</div>
+				<dl class="myDl">
+					<dt><img src="img/1_07.png"/></dt>
+					<dd>
+						<p class="myP1">
+							3D洒洒水所多所多多所付所多色的热女费过的法国的郭德纲的规定费
+						</p>
+						<p class="myP2">¥888888888</p>
+						<p class="myP3">
+							<span>成功交易2332次</span>
+							<button class="button1">上架中</button>
+							<button class="button2">已至顶</button>
+						</p>
+					</dd>
+				</dl>
+				<dl class="myDl">
+					<dt><img src="img/1_07.png"/></dt>
+					<dd>
+						<p class="myP1">
+							3D洒洒水所多所多多所付所多色的热女费过的法国的郭德纲的规定费
+						</p>
+						<p class="myP2">¥888888888</p>
+						<p class="myP3">
+							<span>成功交易2332次</span>
+							<button class="button3">库存中</button>
+						</p>
+					</dd>
+				</dl>
+				<dl class="myDl">
+					<dt><img src="img/1_07.png"/></dt>
+					<dd>
+						<p class="myP1">
+							3D洒洒水所多所多多所付所多色的热女费过的法国的郭德纲的规定费
+						</p>
+						<p class="myP2">¥888888888</p>
+						<p class="myP3">
+							<span>成功交易2332次</span>
+							<button class="button1">上架中</button>
+							<button class="button4">未至顶</button>
+						</p>
+					</dd>
+				</dl>
+				<dl class="myDl">
+					<dt><img src="img/1_07.png"/></dt>
+					<dd>
+						<p class="myP1">
+							3D洒洒水所多所多多所付所多色的热女费过的法国的郭德纲的规定费
+						</p>
+						<p class="myP2">¥888888888</p>
+						<p class="myP3">
+							<span>成功交易2332次</span>
+							<button class="button5">待审核</button>
+						</p>
+					</dd>
+				</dl>
+				<dl class="myDl">
+					<dt><img src="img/1_07.png"/></dt>
+					<dd>
+						<p class="myP1">
+							3D洒洒水所多所多多所付所多色的热女费过的法国的郭德纲的规定费
+						</p>
+						<p class="myP2">¥888888888</p>
+						<p class="myP3">
+							<span>成功交易2332次</span>
+							<button class="button6">草稿箱</button>
+						</p>
+					</dd>
+				</dl>
+			</section>
+			<footer>
+				<ul>
+				    <li><img src="img/1_11.png"/><span>一键上架</span></li>
+					<li><img src="img/1_13.png"/><span>一键下架</span></li>
+				</ul>
+			</footer>
+		</div>
+		<div class="shadow"></div>
+		<div class="popBox">
+			<p>确认将全部库存商品全部上架吗？</p>
+			<ul>
+				<li>取消</li><li>确认</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$('footer ul li:eq(0)').click(function(){
+				$('.shadow').show();
+				$('.popBox').show();
+			});
+			$('.popBox ul li').click(function(){
+				$('.shadow').hide();
+				$('.popBox').hide();
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>店铺与个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/my_home_person.css" />
+		<script src="../js/jquery-3.1.1.js"></script>
+	</head>
+
+	<body>
+		<div class="warp">
+			<header>
+				<a href="../../shouye.html"><img src="../img/1_03.png" /></a>
+				<p>店铺与个人信息</p>
+				<span class="h-span-right"><img src="../img/11_03.png" alt=""></span>
+			</header>
+			<div class="banner">
+				<img src="img/222.jpg" />
+			</div>
+			<nav>
+				<span class="span1"><img src="img/12.jpg"/></span>
+				<p>
+					<span><img src="img/images/22_03.png"/></span>
+					<span>110关注的人，</span>
+					<span>56设计作品</span>
+					<a href="my_home_sign.html">我想成为签约设计师</a>
+				</p>
+
+			</nav>
+			<div class="only">
+				是范德萨发生的发生的的范德是电风扇的范德萨发是对方是否是的发生的冯绍峰是否是对方是否是打分
+			</div>
+			<section>
+				<div class="s-one">
+					<p>必填信息</p>
+					<ul>
+						<li>
+							<img class="image1" src="img/images/2_03.png" /> 设计师ID：小黑仔
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_06.png" /> 真是姓名：小乌龟
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<a href="my_home_sex.html">
+							<li>
+							<img class="image1" src="img/images/2_08.png" /> 性别：男
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						</a>
+						<li>
+							<img class="image1" src="img/images/2_10.png" /> 身份证号：6423547686786
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<a href="my_home_tel.html">
+							<li>
+							<img class="image1" src="img/images/2_12.png" /> 手机号：13232t6554
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						</a>
+					</ul>
+				</div>
+				<div class="s-one">
+					<p>选填信息</p>
+					<ul>
+						<li>
+							<img class="image1" src="img/images/2_14.png" /> 所在地区：北京 海淀
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_20.png" /> 星座：巨蟹座
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_22.png" /> 血型：A型
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_24.png" /> 身高：180cm
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_28.png" /> 微信：3243454
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_30.png" /> 微博：小黑仔
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						<li>
+							<img class="image1" src="img/images/2_32.png" /> QQ：2323423432
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+					</ul>
+				</div>
+				<a href="my_home_p_code.html"><p class="myP">我的二维码名片<img src="../img/1_12.png" alt="" /></p></a>
+				<div class="s-one">
+					<p>店铺基本信息</p>
+					<ul>
+						<a href="my_home_name.html">
+							<li>
+							<img class="image1" src="img/images/2_34.png" /> 
+							店铺名称:孙大壮
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+						</a>
+						<li>
+							<img class="image1" src="img/images/2_36.png" /> 
+							店铺客服电话：342332432
+							<img class="image2" src="../img/1_12.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="s-two">
+					<a href="my_home_address.html"><p>默认收货信息</p></a>
+					<ul>
+						<li>
+							小毛：12312334243
+						</li>
+						<li>
+							北京市海淀区XXX路XXX号33-2344
+						</li>
+							<img class="image2" src="../img/1_12.png" />
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="shadow"></div>
+		<div class="popBox">
+			<div class="popBox-div">
+				<p>拍照</p>
+				<p>从相册选择</p>
+			</div>
+			<p class="myP1">取消</p>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$('nav .span1').click(function(){
+				$('.shadow').show();
+				$('.popBox').show();
+				$('body').css({"overflow":"hidden"});
+			});
+			$('.myP1').click(function(){
+				$('.shadow').hide();
+				$('.popBox').hide();
+				$('body').css({"overflow":"auto"});
+			})
+		})
+	</script>
+</html>

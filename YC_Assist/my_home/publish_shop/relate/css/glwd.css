@@ -1,0 +1,77 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.yjp_shr header {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .yjp_shr header h1 {
+    text-align: center;
+    width: 100%;
+    height: 4.5rem;
+    background: none;
+    line-height: 4.5rem;
+    font-size: 16px; }
+  .yjp_shr header .header_left img {
+    width: 1rem;
+    height: auto;
+    background: none;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.1rem; }
+
+.yjp_shr section {
+  background: #F7F7F7;
+  -webkit-box-flex: 1; }
+  .yjp_shr section .section_no1 {
+    width: 100%;
+    height: 8rem;
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; }
+    .yjp_shr section .section_no1 p {
+      border-bottom: 1px solid #ccc;
+      padding-left: 1.1rem;
+      -webkit-box-flex: 1;
+      line-height: 4rem; }
+      .yjp_shr section .section_no1 p:nth-child(2) {
+        border: none; }
+  .yjp_shr section .section_no2 {
+    padding-top: 7px;
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem; }
+    .yjp_shr section .section_no2 > button {
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 4rem;
+      background: #ccc;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px; }
+
+/*# sourceMappingURL=glwd.css.map */

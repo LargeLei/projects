@@ -1,0 +1,62 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include full(100%,100%,#f7f7f7);
+    @include box(vertical);
+}
+.yjp_shr header{
+    position: relative;
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #ccc;
+    .header_left{
+        position: absolute;
+        top: 1.4rem;
+        left: 1.1rem;
+        img{
+            @include full(1rem,auto,none);
+        }
+    }
+    .header_right{
+        @include full(100%,4.5rem,none);
+        text-align: center;
+        line-height: 4.5rem;
+        font-size: 1.6rem;
+    }
+}
+.yjp_shr section{
+    -webkit-box-flex: 1;
+    .section_no1{
+        @include full(100%,20rem,none);
+        text-align: center;
+        padding-top: 7rem;
+        img{
+            @include full(10rem,auto,none);
+        }
+    }
+    h3{
+        @include full(100%,3rem,none);
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    p{
+        text-align: center;
+    }
+}

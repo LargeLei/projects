@@ -1,0 +1,230 @@
+@import url(reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 4.4rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.warp header a {
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+  background: none;
+  margin-left: 0.5rem;
+}
+.warp header a img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp header p {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.warp header .h-span-right {
+  display: inline-block;
+  width: 1.8rem;
+  height: auto;
+  background: none;
+  margin-right: 0.5rem;
+}
+.warp header .h-span-right img {
+  width: 1.8rem;
+  height: auto;
+  background: none;
+}
+.warp section {
+  -webkit-box-flex: 1;
+  &::-webkit-scrollbar{
+  	width: 0;
+  }
+}
+.warp section .myUl1 {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+  display: -webkit-box;
+}
+.warp section .myUl1 li {
+  -webkit-box-flex: 1;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  background: url("../img/12_03.png") no-repeat right center;
+}
+.warp section .myUl1 li img {
+  width: 1rem;
+  height: auto;
+  background: none;
+  margin-left: 0.2rem;
+}
+.warp section .myUl1 li:last-child {
+  background-image: none;
+}
+.warp section .myShadow {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  position: relative;
+}
+.warp section .myShadow .shadow1 {
+  width: 100%;
+  height: 100%;
+  background: #008000;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 100;
+}
+.warp section .myShadow .s-one {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 0.5rem;
+}
+.warp section .myShadow .s-one .p1 {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #F2F2F2;
+}
+.warp section .myShadow .s-one .myUl2 {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  position: relative;
+  color: #747474;
+}
+.warp section .myShadow .s-one .myUl2 li {
+  padding-top: 0.6rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+.warp section .myShadow .s-one .myUl2 .myUl3 {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  display: -webkit-box;
+}
+.warp section .myShadow .s-one .myUl2 .myUl3 li img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+}
+.warp section .myShadow .s-one .myP2 {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  line-height: 1.7rem;
+  border-bottom: 1px solid #F2F2F2;
+}
+.warp section .myShadow .s-one .myP3 {
+  width: 100%;
+  height: auto;
+  background: none;
+  text-align: right;
+}
+.warp section .myShadow .s-one .myP3 button {
+  width: 6rem;
+  height: 2rem;
+  background: none;
+  border: 1px solid #ffa370;
+  color: #ffa370;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.warp section .myShadow .s-one .myP21 {
+  border-bottom: none;
+}
+.warp section .myShadow .s-one .myP4 {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  line-height: 1.7rem;
+  border-bottom: 1px solid #F2F2F2;
+}
+.warp section .myShadow .s-one .myP4 span {
+  color: #666666;
+}
+.warp section .myShadow .s-one .myP5 {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  line-height: 1.7rem;
+  border-bottom: 1px solid #F2F2F2;
+}
+.warp section .myShadow .s-one .myP5 span {
+  color: #ffa674;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: #008000;
+  opacity: 0.3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.popBox {
+  width: 100%;
+  height: auto;
+  background: #ebebeb;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.popBox textarea {
+  width: 96%;
+  height: 6rem;
+  background: #ffffff;
+  margin-left: 2%;
+  border: 1px solid #ebebeb;
+  margin-top: 2rem;
+}
+.popBox p {
+  text-align: right;
+}
+.popBox p button {
+  width: 5rem;
+  height: 2rem;
+  background: #b3b3b3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}

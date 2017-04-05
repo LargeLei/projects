@@ -1,0 +1,74 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include full(100%,100%,none);
+    @include box(vertical);
+}
+.yjp_shr header{
+    position:relative;
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #ccc;
+    @include box(horizontal);
+    h1{
+        text-align: center;
+        @include full(100%,4.5rem,none);
+        line-height: 4.5rem;
+        font-size: 16px;
+    }
+    .header_left{
+        img{
+            @include full(1rem,auto,none);
+            position: absolute;
+            top: 1.2rem;
+            left: 1.1rem;  
+        }
+    }
+}
+.yjp_shr section{
+    background: #F7F7F7;
+    -webkit-box-flex: 1;
+    .section_no1{
+        @include full(100%,8rem,#fff);
+        @include box(vertical);
+        p{
+            border-bottom: 1px solid #ccc;
+            padding-left: 1.1rem;
+            -webkit-box-flex: 1;
+            line-height: 4rem;
+            &:nth-child(2){
+                border: none;
+            }
+        }
+    }
+    .section_no2{
+        padding-top: 7px;
+        @include full(100%,auto,none);
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        &>button{
+            border: none;
+            outline: none;
+            @include full(100%,4rem,#ccc);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import url(reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 4.4rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ccc;
+}
+.warp header a {
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+  background: none;
+  margin-left: 0.5rem;
+}
+.warp header a img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp header p {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.warp header .h-span-right {
+  display: inline-block;
+  width: 2.4rem;
+  height: auto;
+  background: none;
+  margin-right: 0.5rem;
+}
+.warp header .h-span-right img {
+  width: 1.8rem;
+  height: auto;
+  background: none;
+}
+.warp section {
+  -webkit-box-flex: 1;
+}
+.warp section .p1 {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.warp section .p2 {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}

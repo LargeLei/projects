@@ -1,0 +1,263 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include full(100%,100%,none);
+    @include box(vertical);
+}
+.yjp_shr header{
+    position: relative;
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #ccc;
+    @include box(horizontal);
+    .header_left{
+        position: absolute;
+        top: 1.4rem;
+        left: 1.1rem;
+        img{
+            @include full(1rem,auto,none);
+        }
+    }
+    .header_right{
+        @include full(100%,4.5rem,none);
+        ul{
+            @include full(100%,4.5rem,none);
+            li{
+                line-height: 4.5rem;
+                @include full(100%,4.5rem,none);
+                text-align: center;
+                font-size: 1.6rem;
+                span{
+                    padding-left:1rem; 
+                    &:nth-child(1){
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+.yjp_shr section{
+    overflow-y: auto;
+    &::-webkit-scrollbar{width:0;};
+    -webkit-box-flex: 1;
+    .section_no1{
+        position: relative;
+        .section_no1_p1{
+            position: absolute;
+            top: 1.1rem;
+            right: 2.25rem;
+            @include full(8rem,1.7rem,#a1a1a1);
+            color: #fff;
+            border-radius: 1.5rem;
+            text-align: center;
+            line-height: 1.7rem;
+        }
+        img{
+            @include full(100%,auto,none);
+        }
+        .section_no1_p2{
+            position: absolute;
+            right: 2.2rem;
+            bottom:0.7rem;
+            font-size: 1.6rem;
+            color: red;
+            img{
+                @include full(1.5rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+    }
+    .section_no2{
+        @include full(100%,auto,none);
+        ul{
+            @include full(100%,3.5rem,none);
+            @include box(horizontal);
+            li{
+                line-height: 3.5rem;
+                -webkit-box-flex: 1;
+                &:nth-child(1){
+                    font-size: 1.8rem;
+                    padding-left: 1.1rem;
+                }
+                &:nth-child(2){
+                    font-size: 1.4rem;
+                    text-align: right;
+                    padding-right: 1.1rem;
+                    color: #ff7f1c;
+                }
+                img{
+                    @include full(2.3rem,auto,none);
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .section_no3{
+        @include full(100%,auto,none);
+        @include box(horizontal);
+        padding-left: 1.1rem;
+        button{
+            border-radius: 0.6rem;
+            border: none;
+            outline: none;
+            font-size: 1.4rem;
+            @include full(6rem,2rem,#ff7f1c);
+            color: #fff;
+        }
+        &>p{
+            padding-left: 0.5rem;
+            line-height: 2rem;
+            &:nth-child(2){
+                color: #FF7F1C;
+            }
+            &:nth-child(3){
+                color: #ccc;
+                text-decoration: line-through;
+            }
+            &>span{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .section_no4{
+        @include full(100%,3rem,none);
+        border-bottom: 5px solid #f2f2f2;
+        ul{
+           @include full(100%,3rem,none);
+           @include box(horizontal); 
+           li{
+               -webkit-box-flex: 1;
+               text-align: center;
+               line-height: 3rem;
+           }
+        }
+    }
+    .section_no5{
+        border-bottom: 5px solid #F2F2F2;
+        padding-left: 1.1rem;
+        @include full(100%,19rem,none);
+        .section_no5_1{
+            @include full(100%,3.5rem,none);
+            border-bottom: 1px solid #ccc;
+            @include box(horizontal);
+            line-height: 3.5rem;
+            p{
+                font-size: 1.4rem;
+                -webkit-box-flex: 1;
+            }
+            &>div{
+                margin-right: 1.1rem;
+                padding-top: 0.4rem;
+                @include full(1rem,3.5rem,none);
+            }
+            img{
+                @include full(1rem,auto,none);
+            }
+        }
+        .section_no5_2{
+            padding-right: 1.1rem;
+            @include full(100%,7.5rem,none);
+            dl{
+               @include full(100%,5.3rem,none);
+               @include box(horizontal); 
+               dt{
+                   padding-top: 0.5rem;
+               }
+               img{
+                   @include full(2.4rem,auto,none);
+               }
+               dd{
+                   padding-left: 2rem;
+                   -webkit-box-flex: 1;
+                   padding-top: 0.4rem;
+               }
+            }
+        }
+    }
+    .section_no6{
+        border-bottom: 5px solid #F2F2F2;
+        padding-left: 1.1rem;
+        @include full(100%,14rem,none);
+        .section_no6_1{
+            @include full(100%,3.5rem,none);
+            border-bottom: 1px solid #ccc;
+            @include box(horizontal);
+            line-height: 3.5rem;
+            p{
+                font-size: 1.4rem;
+                -webkit-box-flex: 1;
+            }
+        }
+        .section_no6_2{
+            @include full(100%,auto,none);
+            @include box(horizontal);
+            dl{
+                text-align: center;
+                padding-top: 0.5rem;
+                -webkit-box-flex: 1;
+                dt{
+                   text-align: left; 
+                }
+                img{
+                    @include full(5.5rem,auto,none);
+                }
+                dd{
+                    padding-top: 0.4rem;
+                    -webkit-transform: scale(0.90);
+                    font-size: 1rem;
+                    span{
+                        &:nth-child(1){
+                            color: #FF7F1C;
+                        }
+                        &:nth-child(2){
+                            color: #ccc;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.yjp_shr footer{
+    overflow: hidden;
+    @include full(100%,5rem,#fff);
+    border-top: 1px solid #ccc;
+    ul{
+        @include full(100%,5rem,#fff);
+        @include box(horizontal);
+        li{
+            line-height: 5rem;
+            -webkit-box-flex: 1;
+            text-align:center;
+             &:nth-child(2){
+                    border-left: 1px solid #ccc;
+            }
+            span{
+                font-size: 1.6rem;
+                padding-left: 0.5rem;
+            }
+            img{
+                @include full(1.8rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+    }
+}

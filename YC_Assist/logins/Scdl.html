@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<div ui-view>
+
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+			<link rel="stylesheet" type="text/css" href="css/Scdl.css" />
+			<script src="../js/jquery-3.1.1.js"></script>
+			<title></title>
+		</head>
+
+		<body>
+			<div class="yjp_shr">
+				<div class="dl_no1">
+					<img src="img/images/6.gif" />
+				</div>
+				<div class="dl_no2">
+					<div><img src="img/images/s4_07.gif" /></div>
+					<input type="text" placeholder="请输入绑定手机号" />
+				</div>
+				<div class="dl_no3">
+					<div><img src="img/images/s4_10.gif" /></div>
+					<input type="password" placeholder="请输入密码" />
+					<img src="img/images/0.gif" />
+				</div>
+				<div class="dl_no4">
+					<a><button>登录</button></a>
+				</div>
+				<div class="dl_no5">
+					<a href="register/zc.html"><button ui-sref="index_2">注册账号</button></a>
+					<button ui-sref="app_2"><a href="reset/mmcz.html">忘记密码</a></button>
+				</div>
+			</div>
+			<div class="popBox">
+				<div class="popBox-div">
+					<p>登录成功！</p>
+				</div>
+				<p class="myP1">确定</p>
+			</div>
+			<div class="popBox1">
+				<div class="popBox-div">
+					<p>无此用户！</p>
+				</div>
+				<p class="myP1">点击注册！</p>
+			</div>
+		</body>
+	</div>
+	<script>
+		$('.dl_no4 button').click(function() {
+			var $val = $('.dl_no2 input').val();
+			var $pwd = $('.dl_no3 input').val();
+			//console.log($val, $pwd);
+			$.ajax({
+				type: 'get',
+				url: 'http://localhost:3000/users/select',
+				data: {
+					where: {
+						user_name: $val,
+						password: $pwd
+					}
+				},
+				dateType: 'json',
+				success: function(data) {
+					//console.log(data);
+					if(data.result.length == 0) {
+						$('.popBox1').show();
+						$('body').css({"overflow":"hidden"});
+					} else {
+						$('.popBox').show();
+						$('body').css({"overflow":"hidden"});
+						//window.location='../shouye.html';
+					}
+				}
+			})
+		})
+		$('.popBox .myP1').click(function(){
+			$('.popBox').hide();
+			$('body').css({"overflow":"auto"});
+			window.location='../shouye.html';
+		})
+		$('.popBox1 .myP1').click(function(){
+			$('.popBox').hide();
+			$('body').css({"overflow":"auto"});
+			window.location='register/zc.html';
+		})
+	</script>
+
+</html>

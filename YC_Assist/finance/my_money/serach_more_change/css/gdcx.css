@@ -1,0 +1,146 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2; }
+
+.yjp_shr header {
+  width: 100%;
+  height: 4.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #000;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .yjp_shr header h1 {
+    -webkit-box-flex: 1;
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 16px; }
+  .yjp_shr header .header_left {
+    padding-top: 1.6rem;
+    padding-left: 1.1rem; }
+    .yjp_shr header .header_left img {
+      width: 1rem;
+      height: auto;
+      background: none; }
+  .yjp_shr header .header_right {
+    padding-top: 1.6rem;
+    padding-right: 1.1rem; }
+    .yjp_shr header .header_right img {
+      width: 1.8rem;
+      height: auto;
+      background: none; }
+
+.yjp_shr section {
+  overflow-y: auto;
+  -webkit-box-flex: 1; }
+  .yjp_shr section .section_no1 {
+    width: 100%;
+    height: auto;
+    background: #fff; }
+    .yjp_shr section .section_no1 > ul {
+      padding: 0.8rem 0;
+      width: 100%;
+      height: 4rem;
+      background: #fff;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .yjp_shr section .section_no1 > ul > li {
+        position: relative;
+        -webkit-box-flex: 1;
+        border-left: 1px solid #ccc;
+        line-height: 2.8rem;
+        text-align: center; }
+        .yjp_shr section .section_no1 > ul > li:nth-child(1) {
+          border: none; }
+        .yjp_shr section .section_no1 > ul > li:nth-child(2) {
+          color: #ffa372; }
+        .yjp_shr section .section_no1 > ul > li img {
+          width: 1rem;
+          height: auto;
+          background: #fff; }
+    .yjp_shr section .section_no1 .section_no1_ul {
+      position: absolute;
+      top: 3.4rem;
+      left: 0;
+      z-index: 1001;
+      width: 100%;
+      height: 15rem;
+      background: #fff;
+      display: -webkit-box;
+      -webkit-box-orient: vertical; }
+      .yjp_shr section .section_no1 .section_no1_ul > li {
+        width: auto;
+        height: 3rem;
+        background: #fff;
+        border: 1px solid #ccc; }
+        .yjp_shr section .section_no1 .section_no1_ul > li:nth-child(2) {
+          color: #000; }
+        .yjp_shr section .section_no1 .section_no1_ul > li:nth-child(3) {
+          color: #000; }
+        .yjp_shr section .section_no1 .section_no1_ul > li:nth-child(4) {
+          color: #000; }
+        .yjp_shr section .section_no1 .section_no1_ul > li:nth-child(5) {
+          color: #000; }
+  .yjp_shr section .section_no2 {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 0.7rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .yjp_shr section .section_no2 > div {
+      -webkit-box-flex: 1; }
+      .yjp_shr section .section_no2 > div ul {
+        padding-top: 4px;
+        height: 4rem;
+        -webkit-box-flex: 1; }
+        .yjp_shr section .section_no2 > div ul li {
+          line-height: 2rem;
+          -webkit-transform: scale(0.9);
+          font-size: 8px; }
+    .yjp_shr section .section_no2 .section_no2_left ul li:nth-child(1) span {
+      color: #5e63b4; }
+    .yjp_shr section .section_no2 .section_no2_right {
+      text-align: right; }
+      .yjp_shr section .section_no2 .section_no2_right ul li:nth-child(2) {
+        color: #fe7f1e; }
+  .yjp_shr section .section_no3 {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 0.7rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .yjp_shr section .section_no3 > div {
+      -webkit-box-flex: 1; }
+      .yjp_shr section .section_no3 > div ul {
+        padding-top: 0.4rem;
+        height: 4rem;
+        -webkit-box-flex: 1; }
+        .yjp_shr section .section_no3 > div ul li {
+          line-height: 2rem;
+          -webkit-transform: scale(0.9);
+          font-size: 8px; }
+    .yjp_shr section .section_no3 .section_no2_left ul li:nth-child(1) span {
+      color: red; }
+    .yjp_shr section .section_no3 .section_no2_right {
+      text-align: right; }
+
+/*# sourceMappingURL=gdcx.css.map */

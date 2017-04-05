@@ -1,0 +1,117 @@
+@import url(reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 4.4rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.warp header a{
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+  background: none;
+  margin-left: 0.5rem;
+}
+.warp header a img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp header p {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.warp header .h-span-right {
+  display: inline-block;
+  width: 1.8rem;
+  height: auto;
+  background: none;
+  margin-right: 0.5rem;
+}
+.warp header .h-span-right img {
+  width: 1.8rem;
+  height: auto;
+  background: none;
+}
+.warpper{
+	-webkit-box-flex: 1;
+  overflow: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+.warp section::-webkit-scrollbar {
+  width: 0;
+}
+.warp section .s-only ul li {
+  border-top: 1px solid #D9D9D9;
+}
+.warp section .s-only ul li:first-child {
+  border-top: none;
+}
+.warp section .s-one {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+}
+.warp section .s-one ul {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+.warp section .s-one ul li {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 1.9rem;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #D9D9D9;
+  position: relative;
+}
+.warp section .s-one ul li .image1 {
+  width: 1.5rem;
+  height: auto;
+  background: none;
+  position: absolute;
+  top: 1.1rem;
+  left: 0;
+}
+.warp section .s-one ul li .image2 {
+  width: 0.9rem;
+  height: auto;
+  background: none;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+}
+.warp section .s-one ul li:last-child {
+  border-bottom: none;
+}
+

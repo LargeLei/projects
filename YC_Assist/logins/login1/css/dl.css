@@ -1,0 +1,132 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  width: 100%;
+  height: 100%;
+  background: none;
+  background: url(../../img/images/bg.gif);
+  background-size: 100%; }
+  html > .dl_no1, body > .dl_no1, .yjp_shr > .dl_no1 {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-top: 6.4rem;
+    text-align: center; }
+    html > .dl_no1 p, body > .dl_no1 p, .yjp_shr > .dl_no1 p {
+      padding-top: 1rem;
+      font-size: 1.4rem; }
+    html > .dl_no1 img, body > .dl_no1 img, .yjp_shr > .dl_no1 img {
+      width: 10rem;
+      height: auto;
+      background: none; }
+  html > .dl_no2, body > .dl_no2, .yjp_shr > .dl_no2 {
+    margin-top: 1rem;
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    html > .dl_no2 > div, body > .dl_no2 > div, .yjp_shr > .dl_no2 > div {
+      padding-top: 1rem;
+      width: 3rem;
+      height: auto;
+      background: none; }
+      html > .dl_no2 > div img, body > .dl_no2 > div img, .yjp_shr > .dl_no2 > div img {
+        width: 3rem;
+        height: auto;
+        background: none; }
+    html > .dl_no2 > input, body > .dl_no2 > input, .yjp_shr > .dl_no2 > input {
+      height: 3.5rem;
+      margin-left: 1.5rem;
+      background: none;
+      outline: none;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid #FF7F1D;
+      display: block;
+      -webkit-box-flex: 1; }
+    html > .dl_no2 > img, body > .dl_no2 > img, .yjp_shr > .dl_no2 > img {
+      width: 2rem;
+      height: auto;
+      background: none;
+      position: absolute;
+      top: 1.8rem;
+      right: 4rem; }
+  html > .dl_no3, body > .dl_no3, .yjp_shr > .dl_no3 {
+    padding-top: 1rem;
+    padding-left: 4rem;
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    padding-right: 4rem;
+    position: relative; }
+    html > .dl_no3 > div img, body > .dl_no3 > div img, .yjp_shr > .dl_no3 > div img {
+      width: 3rem;
+      height: auto;
+      background: none; }
+    html > .dl_no3 > input, body > .dl_no3 > input, .yjp_shr > .dl_no3 > input {
+      margin-left: 1.5rem;
+      background: none;
+      outline: none;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid #FF7F1D;
+      display: block;
+      -webkit-box-flex: 1; }
+    html > .dl_no3 > img, body > .dl_no3 > img, .yjp_shr > .dl_no3 > img {
+      position: absolute;
+      right: 4.5rem;
+      top: 3rem;
+      width: 2rem;
+      height: auto;
+      background: none; }
+  html .dl_no4, body .dl_no4, .yjp_shr .dl_no4 {
+    padding: 1rem 1.5rem 0 1.5rem;
+    width: 100%;
+    height: auto;
+    background: none; }
+    html .dl_no4 button, body .dl_no4 button, .yjp_shr .dl_no4 button {
+      border: none;
+      outline: none;
+      font-size: 18px;
+      width: 100%;
+      height: 3.5rem;
+      background: #FF7F1D;
+      border-radius: 6px;
+      color: #fff;
+      text-align: center; }
+  html .dl_no5, body .dl_no5, .yjp_shr .dl_no5 {
+    position: relative; }
+    html .dl_no5 button, body .dl_no5 button, .yjp_shr .dl_no5 button {
+      background: none;
+      border: none;
+      outline: none;
+      color: #507daf; }
+      html .dl_no5 button:nth-child(1), body .dl_no5 button:nth-child(1), .yjp_shr .dl_no5 button:nth-child(1) {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem; }
+      html .dl_no5 button:nth-child(2), body .dl_no5 button:nth-child(2), .yjp_shr .dl_no5 button:nth-child(2) {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem; }
+
+/*# sourceMappingURL=dl.css.map */

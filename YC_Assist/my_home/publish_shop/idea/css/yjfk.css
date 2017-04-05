@@ -1,0 +1,72 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.yjp_shr header {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc; }
+  .yjp_shr header .header_left {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.1rem; }
+    .yjp_shr header .header_left img {
+      width: 1rem;
+      height: auto;
+      background: none; }
+  .yjp_shr header .header_right {
+    width: 100%;
+    height: 4.5rem;
+    background: none;
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 1.6rem; }
+
+.yjp_shr section {
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  -webkit-box-flex: 1;
+  background: #F7F7F7; }
+  .yjp_shr section p {
+    width: 100%;
+    height: auto;
+    background: none;
+    font-size: 1.4rem;
+    line-height: 3rem; }
+  .yjp_shr section textarea {
+    outline: none;
+    width: 100%;
+    height: 15rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px; }
+  .yjp_shr section button {
+    width: 100%;
+    height: 3rem;
+    background: #ff7f1c;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 0.7rem; }
+
+/*# sourceMappingURL=yjfk.css.map */

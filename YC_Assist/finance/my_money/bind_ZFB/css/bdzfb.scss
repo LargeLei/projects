@@ -1,0 +1,130 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include box(vertical);
+    @include full(100%,100%,#f2f2f2);
+}
+.yjp_shr header{
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #cccccc;
+    @include box(horizontal);
+    h1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 4.5rem;
+        font-size: 16px;
+    }
+    .header_left{
+        padding-top: 1.6rem;
+        padding-left: 1.1rem;
+        img{
+            @include full(1rem,auto,none);
+        }
+    }
+    .header_right{
+        padding-top: 1.6rem;
+        padding-right: 1.1rem;
+        img{
+            @include full(1.8rem,auto,none);
+        }
+    }
+    
+}
+.yjp_shr section{
+    -webkit-box-flex: 1;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    background: #f7f7f7;
+    .section_no1{
+        padding-left: 1.1rem;
+        @include full(100%,auto,#fff);
+        @include box(horizontal);
+        input{
+           border-bottom: 1px solid #ccc;
+           -webkit-box-flex: 1;
+           display: block;
+           outline: none;
+           border-top: none; 
+           border-left: none; 
+           border-right: none; 
+           padding-left: 0.4rem;
+           line-height: 4rem;
+        }
+        &>div{
+            border-bottom: 1px solid #ccc;
+            @include full(10rem,4.1rem,#fff);
+            font-size: 14px;
+            line-height: 4rem;
+        }
+    }
+    .section_no2{
+        padding-left: 11px;
+        @include full(100%,auto,#fff);
+        @include box(horizontal);
+        border-bottom: 1px solid #ccc;
+        .section_no2_left{
+            @include box(horizontal);
+            -webkit-box-flex: 1;
+            input{
+               -webkit-box-flex: 1;
+               display: block;
+               outline: none;
+               border: none; 
+               padding-left:0.4rem;
+               line-height: 4rem;
+            }
+            &>div{
+                @include full(7.5rem,4.1rem,#fff);
+                font-size: 14px;
+                line-height: 4rem;
+            }
+        }
+        .section_no2_right{
+            @include full(8.1rem,4rem,none);
+            border-left: 1px solid #ccc;
+            button{
+                @include full(100%,100%,#fff);
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .section_no4{
+        @include full(100%,auto,none);
+        padding-left: 1.1rem;
+        padding-top: 1rem;
+        padding-bottom:1.4rem;
+    }
+    .section_no3{
+        @include full(100%,3rem,none);
+//      border: 1px solid #000;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        button{
+            @include full(100%,3rem,#ff7f1c);
+            color: #fff;
+            font-size: 18px;
+            border-radius:0.6rem;
+            border: none;
+            outline: none;
+        }
+    }  
+}
+

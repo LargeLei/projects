@@ -1,0 +1,102 @@
+@import url(reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 4.4rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  font-size: 1.4rem;
+}
+.warp header a {
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+  background: none;
+  margin-left: 0.5rem;
+}
+.warp header a img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp header p {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.warp section {
+  -webkit-box-flex: 1;
+}
+.warp section .s-only {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 40%;
+}
+.warp section .s-only .p1 {
+  padding-left: 0.5rem;
+}
+.warp section .s-only .btn {
+  width: 96%;
+  height: auto;
+  background: #ff7f1d;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  margin-left: 2%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: #87ceeb;
+  opacity: 0.5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.popBox {
+  width: 60%;
+  height: auto;
+  background: #ffffff;
+  position: fixed;
+  left: 20% ;
+  top: 35%;
+  display: none;
+  border-radius: 5px;
+}
+.popBox .myP2 {
+  width: 100%;
+  height: auto;
+  background: none;
+  text-align: center;
+  padding-top: 3.6rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.popBox .myP1 {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: blue;
+}

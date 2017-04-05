@@ -1,0 +1,153 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include box(vertical);
+    @include full(100%,100%,#f2f2f2);
+}
+.yjp_shr header{
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #000;
+    @include box(horizontal);
+    h1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 4.5rem;
+        font-size: 16px;
+    }
+    .header_left{
+        padding-top: 1.6rem;
+        padding-left: 1.1rem;
+        img{
+            @include full(1rem,auto,none);
+        }
+    }
+    .header_right{
+        padding-top: 1.6rem;
+        padding-right: 1.1rem;
+        img{
+            @include full(1.8rem,auto,none);
+        }
+    } 
+}
+.yjp_shr section{
+    z-index:-1;
+    overflow-y: auto;
+    -webkit-box-flex: 1;
+    .section_no1{
+        @include full(100%,auto,#fff);
+        &>ul{
+           padding: 0.8rem 0 ; 
+           @include full(100%,4rem,#fff);
+           @include box(horizontal); 
+           &>li{
+                position:relative; 
+                &:nth-child(1){
+                    border: none;
+                    color: #ffa372;
+                    span{
+                        margin-top: 0.5rem;
+                        display: block;
+                        border: 1px solid #ffa372;
+                    }           
+                }
+                -webkit-box-flex: 1;
+                border-left: 1px solid #ccc;
+                line-height: 2.8rem;
+                text-align: center;
+                img{
+                    @include full(1rem,auto,#fff); 
+                }
+           }
+        }
+    }
+    .section_no2{
+        overflow: hidden;
+        @include full(100%,auto,#fff);
+        margin-top: 0.7rem;
+        @include box(horizontal);
+        &>div{
+             -webkit-box-flex: 1;
+           ul{
+              padding-top: 4px;
+              height: 4rem;
+              -webkit-box-flex: 1;
+              li{
+                  line-height: 2rem;
+                  -webkit-transform: scale(0.90);
+                  font-size: 8px;
+              } 
+           }
+        }
+        .section_no2_left{
+            ul{
+                li{
+                     &:nth-child(1){
+                         span{
+                             color: #5e63b4;
+                         }
+                     }
+                }
+            }
+        }
+        .section_no2_right{
+            text-align: right;
+            ul{
+                li{
+                    &:nth-child(2){
+                        color: #fe7f1e;
+                     }
+                }
+            }
+        }
+    }
+    .section_no3{
+        overflow: hidden;
+        @include full(100%,auto,#fff);
+        margin-top: 0.7rem;
+        @include box(horizontal);
+        &>div{
+            -webkit-box-flex: 1;
+           ul{
+              padding-top: 0.4rem;
+              height: 4rem;
+              -webkit-box-flex: 1;
+              li{
+                  line-height: 2rem;
+                  -webkit-transform: scale(0.90);
+                  font-size: 8px;
+              } 
+           }
+        }
+        .section_no2_left{
+            ul{
+                li{
+                     &:nth-child(1){
+                         span{
+                             color: red;
+                         }
+                     }
+                }
+            }
+        }
+        .section_no2_right{
+            text-align: right;
+        }
+    }
+}

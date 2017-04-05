@@ -1,0 +1,192 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include box(vertical);
+    @include full(100%,100%,#f2f2f2);
+}
+.yjp_shr header{
+    @include full(100%,4.5rem,#ff7f1d);
+    @include box(horizontal);
+    h1{
+        color: #fff;
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 4.5rem;
+        font-size: 16px;
+    }
+    .header_left{
+        padding-top: 1.6rem;
+        padding-left: 1.1rem;
+        img{
+            @include full(1rem,auto,none);
+        }
+    }
+    .header_right{
+        padding-top: 1.6rem;
+        padding-right: 1.1rem;
+        img{
+            @include full(1.8rem,auto,none);
+        }
+    }
+    
+}
+.yjp_shr section{
+    overflow-y: auto;
+    &::-webkit-scrollbar{width:0;};
+    -webkit-box-flex: 1;
+    .section_no1{
+        @include full(100%,20rem,#fff);
+        .section_no1_1{
+            padding-right: 2rem;
+            padding-top: 1.5rem;
+            text-align: right;
+            &>button{
+                @include full(6rem,2rem,#fff);
+                border: 1px solid #FF7F1d;
+                border-radius: 0.6rem;
+                color: #FF7F1d;
+                outline: none;
+            }
+        }
+        .section_no1_2{
+            text-align: center;
+            font-size: 16px;
+            margin-top: 0.5rem;
+        }
+        .section_no1_3{
+            text-align: center;
+            font-size: 16px;
+            color: #FF7F1D;
+            margin-top: 1.2rem;
+        }
+        .section_no1_4{
+            text-align: center;
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-top: 0.4rem;
+        }
+        .section_no1_5{
+            -webkit-transform: scale(0.90);
+            text-align: center;
+            font-size: 10px;
+            margin-top: 1rem;
+            span{
+                color: #FF7F1D;
+            }
+        }
+        .section_no1_6{
+            margin-top: 3rem;
+            text-align: center;
+            button{
+                outline: none;
+                @include full(6rem,2.5rem,none);
+                border-radius:1.5rem;
+                border: 1px solid #ccc;
+                &:nth-child(1){
+                    background: #FF7F1D;
+                    color: #fff;
+                    border: none;
+                }
+                &:nth-child(2){
+                    color: #FF7F1D;
+                }
+            }
+        }
+    }
+    .section_no2{
+        @include full(100%,3rem,#fff);
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        margin-top: 5px;
+        ul{
+           -webkit-box-flex: 1;
+           li{
+                -webkit-box-flex: 1;
+                @include box(horizontal);
+                line-height:3rem;
+                span{
+                    padding-top: 4px;
+                    display: inline-block;
+                    @include full(0.7rem,auto,#fff);
+                    img{
+                        @include full(0.7rem,auto,#fff);
+                    }
+                }
+                p{
+                    padding-top: 0.3rem;
+                    -webkit-box-flex: 1;
+                    &>img{
+                        @include full(1.4rem,auto,#fff);
+                    }    
+                }
+                
+           } 
+        }
+    }
+    &>p{
+        margin-top: 0.7rem;
+        line-height: 3rem;
+        padding-top: 0.2rem;
+        padding-left: 1.1rem;
+        @include full(100%,3rem,#fff);
+        font-size: 14px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .section_no3{
+        overflow: hidden;
+        @include full(100%,auto,#fff);
+        @include box(horizontal);
+        border-bottom: 1px solid #f2f2f2;
+        &>div{
+             -webkit-box-flex: 1;
+           ul{
+              padding-top: 0.4rem;
+              height: 4rem;
+              -webkit-box-flex: 1;
+              li{
+                  line-height: 2rem;
+                  -webkit-transform: scale(0.90);
+                  font-size: 8px;
+              } 
+           }
+        }
+        .section_no2_left{
+            ul{
+                li{
+                     &:nth-child(1){
+                         span{
+                             color: #5e63b4;
+                         }
+                     }
+                }
+            }
+        }
+        .section_no2_right{
+            text-align: right;
+            ul{
+                li{
+                    &:nth-child(2){
+                        color: #fe7f1e;
+                     }
+                }
+            }
+        }
+    }
+}

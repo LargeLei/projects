@@ -1,0 +1,96 @@
+@import url(reset.css);
+.full(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@ver:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html,
+body,
+.warp {
+    .full(100%,100%,#f2f2f2);
+    font-size: 62.5%;
+}
+.warp{
+    .box;
+    header {
+         .full(100%,4.4rem,#f7f7f7);
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        a {
+            display: inline-block;
+            .full(1rem,auto,none);
+            margin-left: 0.5rem;
+            img {
+                .full(1rem,auto,none);
+            }
+        }
+        p {
+            -webkit-box-flex: 1;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .h-span-right {
+            display: inline-block;
+            .full(1.8rem,auto,none);
+            margin-right: 0.5rem;
+            img {
+                .full(1.8rem,auto,none);
+            }
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        img{
+             .full(40%,auto,none);
+             margin-left: 30%;
+             margin-top: 40%;
+        }
+    }
+}
+.shadow{
+     .full(100%,100%,skyblue);
+     opacity: 0.5;
+     position: fixed;
+     left: 0;
+     top: 0;
+     display: none;
+}
+.popBox{
+    .full(96%,auto,none);
+     position: fixed;
+     left:2% ;
+     bottom: 0;
+     display: none;
+     .popBox-div{
+         .full(100%,auto,white);
+         border-radius: 5px;
+         overflow: auto;
+         dl{
+             .full(25%,auto,none);
+             float: left;
+             text-align: center;
+             padding-top: 3rem;
+             dt{
+                 img{
+                      .full(auto,3.5rem,none);
+                 }
+             }
+             dd{
+                 padding-top: 1.5rem;
+             }
+         }
+     }
+     .myP1{
+         .full(100%,auto,white);
+         text-align: center;
+         border-radius: 5px;
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+          margin-top: 0.5rem;
+     }
+}

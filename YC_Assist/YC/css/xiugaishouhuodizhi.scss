@@ -1,0 +1,81 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($name,$val,$val2,$val3){
+    .#{$name}-24{font-size: $val;}
+    .#{$name}-12{font-size: $val2;color: #b9b9b9;}
+    .#{$name}-11{font-size: $val3;color: #76bff2;}    
+}
+@include font(spc,24px,12px,20px);
+html,body,.warp{
+    @include full(100%,100%,none);
+    @include box();
+}
+.warp{
+    header{
+        @include full(100%,38px,#f7f7f7);
+        @include box(horizontal);
+        border-bottom: 1px solid #bfbfbf;
+        .header_left,.header_right{
+            @include full(30px,38px,none);
+            line-height: 38px;
+            text-align: center;
+        }
+        .header_center{
+            -webkit-box-flex: 1;
+            line-height: 38px;
+            text-align: center;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f2f2f2;
+        .main{
+            @include full(100%,auto,#f7f7f7);
+            padding-left: 10px;
+            box-sizing: border-box;
+            position: relative;
+            ul{
+                @include full(100%,auto,none);
+                li{
+                    @include box(horizontal);
+                    border-bottom: 1px solid #f2f2f2;
+                    p{
+                        display: block;
+                        @include full(60px,24px,none);
+                        line-height: 24px;
+                    }
+                    input{
+                        @include full(100%,24px,none);
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+            img{
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+            }
+        }
+        button{
+            @include full(94%,25px,#ff7f1d);
+            margin-top: 25px;
+            margin-left: 9px;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}

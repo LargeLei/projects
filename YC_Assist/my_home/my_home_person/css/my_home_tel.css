@@ -1,0 +1,105 @@
+@import url(reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 4.4rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.warp header a {
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+  background: none;
+  margin-left: 0.5rem;
+}
+.warp header a img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp header p {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.warp header .h-span-right {
+  display: inline-block;
+  width: 1.8rem;
+  height: auto;
+  background: none;
+  margin-right: 0.5rem;
+}
+.warp header .h-span-right img {
+  width: 1.8rem;
+  height: auto;
+  background: none;
+}
+.warp section {
+  -webkit-box-flex: 1;
+}
+.warp section .s-only {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.warp section .s-only .p1 {
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.warp section .s-only .s-only-one {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.warp section .s-only .s-only-one input {
+  width: 75%;
+  height: auto;
+  background: none;
+  border: 1px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-left: none;
+  border-right: none;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+.warp section .s-only .s-only-one button {
+  width: 25%;
+  height: auto;
+  background: none;
+  float: right;
+  border: 1px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-right: none;
+}
+.warp section .s-only .btn {
+  display: inline-block;
+  width: 96%;
+  height: auto;
+  background: #ff7f1d;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  margin-left: 2%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.4rem;
+}

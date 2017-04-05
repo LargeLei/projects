@@ -1,0 +1,125 @@
+@import url(reset.css);
+.full(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@ver:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html,
+body,
+.warp {
+    .full(100%,100%,#f2f2f2);
+    font-size: 62.5%;
+}
+.warp{
+    .box;
+      header {
+        width: 100%;
+        height: 4.4rem;
+        background: #f7f7f7;
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        a {
+            display: inline-block;
+            width: 1rem;
+            height: auto;
+            background: none;
+            margin-left: 0.5rem;
+            img {
+                width: 1rem;
+                height: auto;
+                background: none;
+            }
+        }
+        p {
+            -webkit-box-flex: 1;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .h-span-right {
+            display: inline-block;
+            width: 5rem;
+            height: auto;
+            background: none;
+            img {
+                width: 1.8rem;
+                height: auto;
+                background: none;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+    .banner{
+        .full(100%,auto,none);
+        img{
+            .full(100%,auto,none);
+        }
+    }
+    .myDl{
+        .full(100%,auto,#cccccc);
+        display: -webkit-box;
+        dl{
+            -webkit-box-flex: 1;
+            text-align: center;
+            padding: 0.8rem 0;
+            dd{
+                padding-top: 0.5rem;
+            }
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        overflow: auto;
+         .banner1{
+         .full(100%,auto,#cccccc);
+         margin-top: 0.5rem;
+         img{
+          .full(100%,auto,#cccccc);
+         }
+    }
+        .myDl2{
+        .full(96%,auto,none);
+        display: -webkit-box;
+        margin-left: 2%;
+        dl{
+            -webkit-box-flex: 1;
+            padding-top: 0.5rem;
+            text-align: center;
+          dt{
+              img{
+                 .full(17rem,auto,none); 
+              }
+          }
+         
+        }
+    }
+    }
+   
+        footer{
+        .full(100%,auto,white); 
+        ul{
+            display: -webkit-box;
+            text-align: center;
+             border-top: 1px solid #ccc;
+             padding:1rem 0;
+            li{
+                -webkit-box-flex: 1;
+                background: url(../img/2_03.png) no-repeat right center;
+                 padding:0.6rem 0;
+                img{
+                    .full(1.7rem,auto,white); 
+                }
+                span{
+                    margin-left: 1rem;
+                }
+            }
+        }
+        ul li:last-child{
+            background: none;
+        }
+    }
+}

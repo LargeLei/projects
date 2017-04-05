@@ -1,0 +1,88 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.yjp_shr header {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .yjp_shr header .header_left {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.1rem; }
+    .yjp_shr header .header_left img {
+      width: 1rem;
+      height: auto;
+      background: none; }
+  .yjp_shr header .header_right {
+    width: 100%;
+    height: 4.5rem;
+    background: none;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 4.5rem; }
+
+.yjp_shr section {
+  -webkit-box-flex: 1; }
+  .yjp_shr section .section_no1 {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    width: 100%;
+    height: 6.5rem;
+    background: none;
+    border-bottom: 1px solid #ccc; }
+    .yjp_shr section .section_no1 .section_no1_right {
+      width: 7rem;
+      height: 6.5rem;
+      background: none;
+      line-height: 6.5rem;
+      text-align: center;
+      color: #ccc; }
+    .yjp_shr section .section_no1 .section_no1_left {
+      -webkit-box-flex: 1; }
+      .yjp_shr section .section_no1 .section_no1_left dl {
+        width: 100%;
+        height: 6.5rem;
+        background: none;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .yjp_shr section .section_no1 .section_no1_left dl dt {
+          width: 4rem;
+          height: auto;
+          background: none;
+          padding-left: 1.1rem;
+          padding-top: 1.1rem; }
+        .yjp_shr section .section_no1 .section_no1_left dl img {
+          width: 4rem;
+          height: auto;
+          background: none; }
+        .yjp_shr section .section_no1 .section_no1_left dl dd {
+          padding-left: 2.5rem;
+          -webkit-box-flex: 1;
+          line-height: 2.2rem; }
+          .yjp_shr section .section_no1 .section_no1_left dl dd h3 {
+            font-size: 1.4rem; }
+          .yjp_shr section .section_no1 .section_no1_left dl dd p {
+            color: #ccc; }
+
+/*# sourceMappingURL=xxtz.css.map */

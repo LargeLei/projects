@@ -1,0 +1,206 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-12 {
+  font-size: 12px;
+  color: #b9b9b9; }
+
+.spc-11 {
+  font-size: 20px;
+  color: #76bff2; }
+
+html, body, .warp {
+  width: 100%;
+  height: 100%;
+  background: none;
+  overflow: hidden; }
+  html a, body a, .warp a {
+    color: black; }
+
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .warp .warp_big {
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; }
+    .warp .warp_big::-webkit-scrollbar {
+      width: 0; }
+  .warp header {
+    width: 100%;
+    height: 38px;
+    background: #f7f7f7;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .warp header .header_left {
+      width: 34px;
+      height: 38px;
+      background: none;
+      line-height: 38px;
+      text-align: center; }
+    .warp header .header_center {
+      -webkit-box-flex: 1;
+      line-height: 38px;
+      text-align: center;
+      font-size: 14px; }
+    .warp header .header_right {
+      width: 34px;
+      height: 38px;
+      background: none;
+      line-height: 38px;
+      text-align: center; }
+  .warp .only666 {
+    -webkit-box-flex: 1;
+    overflow: auto;
+    background: #f2f2f2; }
+    .warp .only666::-webkit-scrollbar {
+      width: 0; }
+    .warp .only666 .banner {
+      width: 100%;
+      height: 95px;
+      background: white;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .warp .only666 .banner .banner_left {
+        width: 74px;
+        height: 95px;
+        background: none;
+        text-align: center;
+        padding-top: 12px;
+        box-sizing: border-box; }
+        .warp .only666 .banner .banner_left dl dt {
+          border-right: 1px solid #ebebeb;
+          margin-top: 10px; }
+        .warp .only666 .banner .banner_left dl dd {
+          box-sizing: border-box; }
+      .warp .only666 .banner .banner_right {
+        -webkit-box-flex: 1;
+        line-height: 33px;
+        padding-left: 12px;
+        box-sizing: border-box;
+        padding-top: 10px;
+        position: relative; }
+        .warp .only666 .banner .banner_right ul li p img {
+          padding: 0 6px;
+          padding-bottom: 3px; }
+        .warp .only666 .banner .banner_right ul li p span {
+          font-weight: bold;
+          color: #ff4808; }
+        .warp .only666 .banner .banner_right .banner_img {
+          width: auto;
+          height: 16px;
+          background: none;
+          position: absolute;
+          right: 16px;
+          top: 35px; }
+    .warp .only666 .main {
+      width: 100%;
+      height: auto;
+      background: white;
+      border-top: 9px solid #f2f2f2; }
+      .warp .only666 .main .main_top {
+        width: 100%;
+        height: 30px;
+        background: none;
+        line-height: 30px;
+        text-align: center;
+        border-bottom: 1px solid #f6f6f6;
+        font-weight: bold;
+        color: #fe9854; }
+      .warp .only666 .main .main_bottom {
+        -webkit-box-flex: 1;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .warp .only666 .main .main_bottom dl {
+          width: 157px;
+          height: 63px;
+          background: none;
+          display: -webkit-box;
+          -webkit-box-orient: horizontal;
+          -webkit-box-flex: 1;
+          border: 1px solid #f7f7f7;
+          padding-left: 10px;
+          box-sizing: border-box; }
+          .warp .only666 .main .main_bottom dl dt img {
+            padding-top: 20px;
+            box-sizing: border-box; }
+          .warp .only666 .main .main_bottom dl dd {
+            padding-left: 10px;
+            box-sizing: border-box; }
+            .warp .only666 .main .main_bottom dl dd h2 {
+              padding-top: 12px; }
+            .warp .only666 .main .main_bottom dl dd span {
+              color: #8d8d8d; }
+    .warp .only666 .main2 {
+      width: 100%;
+      height: auto;
+      background: white;
+      margin-top: 4px; }
+      .warp .only666 .main2 .main2_top {
+        width: 100%;
+        height: 28px;
+        background: none;
+        position: relative;
+        border-bottom: 1px solid #f2f2f2; }
+        .warp .only666 .main2 .main2_top .main2_top_img {
+          width: 8px;
+          height: 13px;
+          background: none;
+          position: absolute;
+          right: 7px;
+          top: 9px; }
+        .warp .only666 .main2 .main2_top ul li {
+          line-height: 28px; }
+          .warp .only666 .main2 .main2_top ul li img {
+            padding-left: 9px;
+            padding-right: 7px;
+            box-sizing: border-box; }
+      .warp .only666 .main2 .main2_bottom {
+        -webkit-box-flex: 1;
+        padding-left: 9px;
+        box-sizing: border-box;
+        position: relative; }
+        .warp .only666 .main2 .main2_bottom dl {
+          width: 100%;
+          height: 50px;
+          background: none;
+          display: -webkit-box;
+          -webkit-box-orient: horizontal;
+          border-bottom: 1px solid #f2f2f2;
+          padding-top: 7px;
+          box-sizing: border-box; }
+          .warp .only666 .main2 .main2_bottom dl dd {
+            padding-left: 6px;
+            box-sizing: border-box; }
+            .warp .only666 .main2 .main2_bottom dl dd h2 {
+              font-weight: bold; }
+            .warp .only666 .main2 .main2_bottom dl dd b {
+              color: #b8b8b8; }
+            .warp .only666 .main2 .main2_bottom dl dd span {
+              color: #b8b8b8;
+              position: absolute;
+              right: 9px;
+              top: 12px; }
+  .warp footer {
+    width: 100%;
+    height: 41px;
+    background: #ffffff;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .warp footer img {
+      padding-top: 3px;
+      box-sizing: border-box; }
+    .warp footer dl {
+      -webkit-box-flex: 1;
+      text-align: center;
+      padding-top: 2px;
+      box-sizing: border-box; }
+      .warp footer dl dd {
+        color: #b2b2b2;
+        margin-bottom: 4px; }
+
+/*# sourceMappingURL=shouye.css.map */

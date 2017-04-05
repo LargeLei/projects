@@ -1,0 +1,69 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include full(100%,100%,none);
+    @include box(vertical);
+}
+.yjp_shr header{
+    position:relative;
+    @include full(100%,4.5rem,#f7f7f7);
+    border-bottom: 1px solid #ccc;
+    @include box(horizontal);
+    h1{
+        text-align: center;
+        @include full(100%,4.5rem,none);
+        line-height: 4.5rem;
+        font-size: 16px;
+    }
+    .header_left{
+        img{
+            @include full(1rem,auto,none);
+            position: absolute;
+            top: 1rem;
+            left: 1.1rem;  
+        }
+    }
+}
+.yjp_shr section{
+    background: #fff;
+    -webkit-box-flex: 1;
+    .section_no1{
+        margin-top: 0.7rem;
+        padding-top: 0.5rem;
+        padding-left: 1.1rem;
+        padding-bottom: 0.5rem;
+        @include full(100%,auto,#f2f2f2);
+        ul{
+            @include full(100%,auto,none);
+            li{
+                @include box(horizontal);
+                img{
+                    @include full(4rem,auto,none);
+                }
+                p{
+                    -webkit-box-flex: 1;
+                    font-size: 12px;
+                    line-height:3.5rem;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}

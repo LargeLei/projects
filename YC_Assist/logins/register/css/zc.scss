@@ -1,0 +1,112 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($font1,$font2,$font3,$font4){
+    .#{$font1}-24{font-size: $font2;}
+    .#{$font1}-16{font-size: $font3;}
+    .#{$font1}-20{font-size: $font4;}
+}
+@include font(spc,24px,16px,20px);
+html,body,.yjp_shr{
+    @include full(100%,100%,none);
+    @include box(vertical);
+}
+.yjp_shr header{
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    @include full(100%,4rem,#f7f7f7);
+    h1{
+        line-height: 4rem;
+        font-size: 16px;
+        text-align: center;
+         @include full(100%,4rem,none);
+    }
+    img{
+        @include full(1rem,auto,none);
+        position: absolute;
+        top: 1.2rem;
+        left: 1.1rem;
+    }
+}
+.yjp_shr section{
+    -webkit-box-flex: 1;
+    background: #f7f7f7;
+    .section_no1{
+        padding-left: 1.1rem;
+        @include full(100%,auto,#fff);
+        @include box(horizontal);
+        input{
+           border-bottom: 1px solid #ccc;
+           -webkit-box-flex: 1;
+           display: block;
+           outline: none;
+           border-top: none; 
+           border-left: none; 
+           border-right: none; 
+           padding-left: 0.4rem;
+           line-height: 4rem;
+        }
+        &>div{
+            border-bottom: 1px solid #ccc;
+            @include full(9rem,4.1rem,#fff);
+            font-size: 1.4rem;
+            line-height: 4rem;
+        }
+    }    
+    .section_no2{
+        padding-left: 1.1rem;
+        @include full(100%,auto,#fff);
+        @include box(horizontal);
+        border-bottom: 1px solid #ccc;
+        .section_no2_left{
+            @include box(horizontal);
+            -webkit-box-flex: 1;
+            input{
+               -webkit-box-flex: 1;
+               display: block;
+               outline: none;
+               border: none; 
+               padding-left: 0.4rem;
+               line-height: 4rem;
+            }
+            &>div{
+                @include full(7.5rem,4.1rem,#fff);
+                font-size: 1.4rem;
+                line-height: 4rem;
+            }
+        }
+        .section_no2_right{
+            @include full(8.1rem,4rem,none);
+            border-left: 1px solid #ccc;
+            button{
+                @include full(100%,100%,#fff);
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .section_no3{
+        margin-top: 2.2rem;
+        @include full(100%,3rem,none);
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        button{
+            @include full(100%,3rem,#ff7f1c);
+            color: #fff;
+            font-size: 1.8rem;
+            border-radius:0.6rem;
+            border: none;
+            outline: none;
+        }
+    }  
+}

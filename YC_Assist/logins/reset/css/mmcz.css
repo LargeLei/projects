@@ -1,0 +1,122 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-16 {
+  font-size: 16px; }
+
+.spc-20 {
+  font-size: 20px; }
+
+html, body, .yjp_shr {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.yjp_shr header {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 4rem;
+  background: #f7f7f7; }
+  .yjp_shr header h1 {
+    line-height: 4rem;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    background: none; }
+  .yjp_shr header img {
+    width: 1rem;
+    height: auto;
+    background: none;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.1rem; }
+
+.yjp_shr section {
+  -webkit-box-flex: 1;
+  background: #f7f7f7; }
+  .yjp_shr section .section_no1 {
+    padding-left: 1.1rem;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .yjp_shr section .section_no1 input {
+      border-bottom: 1px solid #ccc;
+      -webkit-box-flex: 1;
+      display: block;
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding-left: 0.4rem;
+      line-height: 4rem; }
+    .yjp_shr section .section_no1 > div {
+      border-bottom: 1px solid #ccc;
+      width: 9rem;
+      height: 4.1rem;
+      background: #fff;
+      font-size: 14px;
+      line-height: 4rem; }
+  .yjp_shr section .section_no2 {
+    padding-left: 1.1rem;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    border-bottom: 1px solid #ccc; }
+    .yjp_shr section .section_no2 .section_no2_left {
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      -webkit-box-flex: 1; }
+      .yjp_shr section .section_no2 .section_no2_left input {
+        -webkit-box-flex: 1;
+        display: block;
+        outline: none;
+        border: none;
+        padding-left: 0.4rem;
+        line-height: 4rem; }
+      .yjp_shr section .section_no2 .section_no2_left > div {
+        width: 7.5rem;
+        height: 4.1rem;
+        background: #fff;
+        font-size: 14px;
+        line-height: 4rem; }
+    .yjp_shr section .section_no2 .section_no2_right {
+      width: 8.1rem;
+      height: 4rem;
+      background: none;
+      border-left: 1px solid #ccc; }
+      .yjp_shr section .section_no2 .section_no2_right button {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border: none;
+        outline: none; }
+  .yjp_shr section .section_no3 {
+    margin-top: 22px;
+    width: 100%;
+    height: 3rem;
+    background: none;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem; }
+    .yjp_shr section .section_no3 button {
+      width: 100%;
+      height: 3rem;
+      background: #ff7f1c;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 0.6rem;
+      border: none;
+      outline: none; }
+
+/*# sourceMappingURL=mmcz.css.map */

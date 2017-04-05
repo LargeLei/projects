@@ -1,0 +1,85 @@
+@import url(reset.css);
+.full(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@ver:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html,
+body,
+.warp {
+    .full(100%,100%,#f2f2f2);
+    font-size: 62.5%;
+}
+.warp{
+    .box;
+     header {
+         .full(100%,4.4rem,#f7f7f7);
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        font-size: 1.4rem;
+        border-bottom: 1px solid #ccc;
+        a {
+            display: inline-block;
+            .full(1rem,auto,none);
+            margin-left: 0.5rem;
+            img {
+                .full(1rem,auto,none);
+            }
+        }
+        p {
+            -webkit-box-flex: 1;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .h-span-right {
+            display: inline-block;
+            .full(2.4rem,auto,none);
+            margin-right: 0.5rem;
+            img {
+                .full(1.8rem,auto,none);
+            }
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+         .s-one {
+            .full(100%,auto,#f7f7f7);
+            margin-top: 0.5rem;
+            ul li:last-child {
+                border-bottom: none;
+            }
+            ul {
+                .full(100%,auto,none);
+                li {
+                    .full(100%,auto,none);
+                    box-sizing: border-box;
+                    padding-top: 0.7rem;
+                    padding-bottom: 0.7rem;
+                    padding-left: 0.5rem;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #D9D9D9;
+                    position: relative;
+                    input{
+                        box-sizing: border-box;
+                        border: none;
+                        outline: none;
+                        background: #f7f7f7;
+                    }
+                    .image2 {
+                        width: 0.9rem;
+                        height: auto;
+                        background: #f7f7f7;
+                        position: absolute;
+                        top: 0.7rem;
+                        right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
